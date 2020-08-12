@@ -6,6 +6,11 @@ text.addEventListener("keypress",function(evt){
     }
 });
 
+const button = document.getElementById("button");
+button.addEventListener("click",function(){
+    getResults(text.value)
+})
+
 function getResults(prayer) {
     fetch(`http://api.aladhan.com/v1/timingsByAddress?address=${prayer}`)
     .then (time => time.json(time))

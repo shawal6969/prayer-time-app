@@ -28,6 +28,10 @@ img{
     top: 50px;
     padding: 20px;
 }
+.button{
+    margin: 0 auto;
+    margin-top: 10px;
+}
 .first-head{
     padding-bottom: 10px;
     font-size: 25px;
