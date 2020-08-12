@@ -12,7 +12,7 @@ button.addEventListener("click",function(){
 })
 
 function getResults(prayer) {
-    fetch(`http://api.aladhan.com/v1/timingsByAddress?address=${prayer}`)
+    fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${prayer}`)
     .then (time => time.json(time))
     .then (json => {
         let fajr = document.getElementById("fajr");
